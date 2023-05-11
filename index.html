@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dentista</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <style>
+      /* Estilos para a fonte */
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #333;
+        background-color: #f5f5f5;
+      }
+      /* Estilos para as abas */
+      .tab {
+        display: none;
+        padding: 40px;
+        font-size: .8rem;
+      }
+      #servicos {
+        background-color: #f8d7da;
+      }
+      #contato {
+        background-color: #d4edda;
+      }
+      #leia-mais {
+        background-color: #d1ecf1;
+      }
+      #cartilhas {
+        background-color: #fff3cd;
+      }
+      #sobre {
+        background-color: #cce5ff;
+      }
+      .active-tab {
+        display: block;
+      }
+      /* Estilos para o menu */
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .tab-links {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .tab-links a {
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.2s ease;
+      }
+      .tab-links a:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+      /* Estilos para dispositivos móveis */
+      @media only screen and (max-width: 600px) {
+        .menu {
+          flex-wrap: wrap;
+        }
+        .tab-links {
+          flex-wrap: wrap;
+          margin-right: 0;
+        }
+        .tab-links a {
+          margin-right: 0;
+          margin-bottom: 10px;
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <nav class="tab-links">
+        <a href="#servicos" onclick="showTab('servicos')">Serviços</a>
+        <a href="#contato" onclick="showTab('contato')">Contato</a>
+        <a href="#leia-mais" onclick="showTab('leia-mais')">Leia Mais</a>
+        <a href="#cartilhas" onclick="showTab('cartilhas')">Cartilhas</a>
+        <a href="#sobre" onclick="showTab('sobre')">Sobre</a>
+      </nav>
+    </div>
+    <div id="servicos" class="tab active-tab">
+      <h1>Serviços</h1>
+      <p>Oferecemos serviços de odontologia geral, incluindo:</p>
+      <ul>
+        <li>Limpeza e polimento</li>
+        <li>Extração de dentes</li>
+        <li>Tratamento de cáries</li>
+        <li>Tratamento de canal</li>
+        <li>Implantes dentários</li>
+      </ul>
+      <p>Todos os nossos serviços são realizados com tecnologia de ponta e por profissionais altamente capacitados e experientes.</p>
+    </div>
+    <div id="contato" class="tab active-tab">
+      <h1>Contato</h1>
+      <p>Entre em contato conosco para agendar uma consulta ou tirar dúvidas:</p>
+      <ul>
+        <li>Telefone: (11) 1234-5678</li>
+        <li>E-mail: contato@clinicadentaria.com</li>
+        <li>Endereço: Rua dos Dentistas, 123, São Paulo - SP</li>
+      </ul>
+    </div>
+    <div id="leia-mais" class="tab active-tab">
+      <h1>Leia Mais</h1>
+      <p>Confira nossos artigos e informações adicionais sobre saúde bucal:</p>
+      <ul>
+        <li><a href="#">Como cuidar dos dentes do seu filho</a></li>
+        <li><a href="#">Dicas para prevenir cáries</a></li>
+        <li><a href="#">Como escolher a escova de dentes certa</a></li>
+        <li><a href="#">Alimentos que prejudicam os dentes</a></li>
+      </ul>
+    </div>
+    <div id="cartilhas" class="tab active-tab">
+      <h1>Cartilhas</h1>
+      <p>Confira nossas cartilhas educativas para pacientes:</p>
+      <ul>
+        <li><a href="#">Cuidados com a higiene bucal</a></li>
+        <li><a href="#">Prevenção de doenças bucais</a></li>
+        <li><a href="#">Alimentação saudável para os dentes</a></li>
+        <li><a href="#">Dicas para escolher o fio dental ideal</a></li>
+      </ul>
+    </div>
+    <div id="sobre" class="tab active-tab">
+      <h1>Sobre</h1>
+      <p>Nossa clínica de odontologia está há mais de 20 anos no mercado, oferecendo serviços de qualidade e um atendimento difer
+  
